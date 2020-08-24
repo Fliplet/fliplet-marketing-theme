@@ -1,11 +1,11 @@
 /*
-Theme Name: Fliplet2 2018
-Theme URI: http: //fliplet.net
-Description: WordPress theme for Fliplet (based on Starkers theme)
-Version: 1.0
-Author: Weboo
-Author URI: http: //weboo.biz
-Tags: starkers, naked, clean, basic
+Theme Name: Fliplet Marketing
+Theme URI: https://www.fliplet.com
+Description: WordPress theme for Fliplet
+Version: 2.0
+Author: Fliplet
+Author URI: https://www.fliplet.com
+Tags: fliplet, app builder, theme, clean
 */
 /*
 ===========================
@@ -30,10 +30,6 @@ CONTENTS:
 4507 Fliplet Styles
 ===========================
 */
-@import 'assets/css/reset.css';
-@import 'assets/css/glyphicons.min.css';
-@import 'assets/css/typography.css';
-@import 'assets/css/swiper.min.css';
 
 /* ----------------------------------------------------------------------------------------------------------
 01 Sensible defaults ----------------------------------------------------------------------------------------

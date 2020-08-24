@@ -1,3 +1,2 @@
-# Fliplet Website Wordpress Theme
-
-Instruction in progress
+# Fliplet Marketing WordPress Theme
+A WordPress theme for Fliplet's marketing site
