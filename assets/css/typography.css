@@ -1,0 +1,15 @@
+@font-face {
+	font-family:'shareaholic-icons';
+	src:url('../fonts/shareaholic-icons.eot');
+	src:url('../fonts/shareaholic-icons.eot?#iefix') format("embedded-opentype"),url('../fonts/shareaholic-icons.woff') format("woff"),url('../fonts/shareaholic-icons.ttf') format("truetype"),url('../fonts/shareaholic-icons.svg#shareaholic-icons') format("svg");
+}
+
+@font-face {
+ font-family: 'Muli';
+ src: url('../fonts/Muli-Regular.ttf') format('truetype'), url('../fonts/Muli-Bold.ttf') format('truetype');
+ }
+
+ @font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  }
