@@ -80,10 +80,6 @@ body {
   line-height: normal;
 }
 
-body.admin-bar {
-  padding-top: 32px;
-}
-
 ::-moz-selection {
   color: #fff;
   background: #36344c;;
