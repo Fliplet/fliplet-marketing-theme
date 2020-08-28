@@ -25,6 +25,7 @@ require get_template_directory().'/inc/view/template-search.php';
 require get_template_directory().'/inc/view/template-shortcodes.php';
 require get_template_directory().'/inc/view/template-sidebars.php';
 require get_template_directory().'/classes/starkers-utilities.php';
+require get_template_directory().'/classes/class-fliplet-walker-menu.php';
 
 //remove pings to self on posts
 function no_self_ping( & $links) {
