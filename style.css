@@ -1202,8 +1202,16 @@ ul.xoxo input:focus {
   transition: all .2s ease-in-out;
 }
 
+.menu-item a,
+.nav-item a,
+.menu-item a:focus,
+.nav-item a:focus {
+  text-decoration: none;
+}
+
 .nav-item:hover > .nav-link,
-.sub-menu .nav-link {
+.sub-menu .nav-link,
+.nav-item.current_page_item > .nav-link {
   color: #23d5ff;
   transition: all .2s ease-in-out;
 }

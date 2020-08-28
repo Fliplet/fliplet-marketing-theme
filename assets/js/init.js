@@ -38,71 +38,6 @@ $(function() {
       return false;
     });
 
-    // toggle opening the website menu sub-menus
-    $('#resources-link').hover(
-      function () {
-        $('#resources-link').addClass('active');
-        $('#resources-link-sub-menu').addClass('active');
-      },
-      function () {
-        $('#resources-link').removeClass('active');
-        $('#resources-link-sub-menu').removeClass('active');
-      }
-    );
-
-    $('#resources-link').on('click', function () {
-      if (!$('#resources-link-sub-menu').hasClass('active')) {
-        $('#resources-link-sub-menu').addClass('active');
-        $('#resources-link').addClass('active');
-      } else {
-        $('#resources-link-sub-menu').removeClass('active');
-        $('#resources-link').removeClass('active');
-      }
-    });
-
-    $('#why-fliplet-link').hover(
-      function () {
-        $('#why-fliplet-link').addClass('active');
-        $('#why-fliplet-link-sub-menu').addClass('active');
-      },
-      function () {
-        $('#why-fliplet-link').removeClass('active');
-        $('#why-fliplet-link-sub-menu').removeClass('active');
-      }
-    );
-
-    $('#why-fliplet-link').on('click', function () {
-      if (!$('#why-fliplet-link-sub-menu').hasClass('active')) {
-        $('#why-fliplet-link-sub-menu').addClass('active');
-        $('#why-fliplet-link').addClass('active');
-      } else {
-        $('#why-fliplet-link-sub-menu').removeClass('active');
-        $('#why-fliplet-link').removeClass('active');
-      }
-    });
-
-
-    $('#features-link').hover(
-      function () {
-        $('#features-link').addClass('active');
-        $('#features-link-sub-menu').addClass('active');
-      },
-      function () {
-        $('#features-link').removeClass('active');
-        $('#features-link-sub-menu').removeClass('active');
-      }
-    );
-
-    $('#features-link').on('click', function () {
-      if (!$('#features-link-sub-menu').hasClass('active')) {
-        $('#features-link-sub-menu').addClass('active');
-        $('#features-link').addClass('active');
-      } else {
-        $('#features-link-sub-menu').removeClass('active');
-        $('#features-link').removeClass('active');
-      }
-    });
-
     // toggle opening the hamburger menu
     $('.menu-hamburger').on('click', function () {
       if ($('.menu-hamburger').hasClass('active')) {
@@ -125,7 +60,7 @@ $(function() {
     });
 
     // Attach click listener to all cta and menu links
-    $('.cta, .menu-item a').on('click', function (e) {
+    $('.cta, .menu-item a, .nav-item a').on('click', function (e) {
       var label = ($(this).parent().hasClass('menu-item')) ? $(this).prop('title') : $(this).prop('id');
       window._gaq.push(['_trackEvent', 'Call To Action', 'Click Through', label]);
     });
