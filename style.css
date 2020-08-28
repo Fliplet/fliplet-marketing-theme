@@ -51,7 +51,6 @@ section {
 }
 
 div#content{
-  padding-top: 50px;
   min-height: calc(100vh - 50px);
 }
 
@@ -1155,22 +1154,20 @@ ul.xoxo input:focus {
   left: 0;
   right: 0;
   background-color: #1a182d;
-  height: 100px;
-  padding-top: 50px;
+  height: 50px;
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  transform: translate3D(0, -50px, 0);
   transition: .1s ease-in-out;
-}
-
-.admin-bar #header {
-  top: 46px;
 }
 
 @media (min-width: 783px) {
   .admin-bar #header {
     top: 32px;
+  }
+
+  div#content{
+    padding-top: 50px;
   }
 }
 
