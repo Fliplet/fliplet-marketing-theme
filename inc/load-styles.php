@@ -27,7 +27,7 @@ function load_animate_css() {
 }
 
 function load_swiper_css() {
-  wp_register_style('swiper_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.5.2', 'all');
+  wp_register_style('swiper_css', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), '6.1.2', 'all');
 
   wp_enqueue_style('swiper_css');
 }
@@ -39,7 +39,7 @@ function load_fliplet_fonts() {
 }
 
 function load_typography() {
-  wp_register_style('fliplet_typography', get_template_directory_uri() . '/assets/css/typography.css', array(), '1.0.0', 'all');
+  wp_register_style('fliplet_typography', get_template_directory_uri() . '/assets/css/typography.css', array(), '1.0.1', 'all');
 
   wp_enqueue_style('fliplet_typography');
 }
