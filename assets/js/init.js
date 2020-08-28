@@ -1,4 +1,4 @@
-$(function() {
+(function () {
   var screenChangeHeight = $(window).height();
 
   //initialize swiper when document ready
@@ -231,4 +231,4 @@ $(function() {
 
   attachHandlers();
   addResponsiveWrapperToIframes();
-});
+}());

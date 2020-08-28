@@ -209,4 +209,5 @@ function pagination( $query = '', $baseURL = '' ) {
 	}
 }
 
+
 ?>

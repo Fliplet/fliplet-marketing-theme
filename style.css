@@ -1,11 +1,11 @@
 /*
-Theme Name: Fliplet Marketing
-Theme URI: https://www.fliplet.com
-Description: WordPress theme for Fliplet
-Version: 2.0
-Author: Fliplet
-Author URI: https://www.fliplet.com
-Tags: fliplet, app builder, theme, clean
+Theme Name: Fliplet2 2018
+Theme URI: http: //fliplet.net
+Description: WordPress theme for Fliplet (based on Starkers theme)
+Version: 1.0
+Author: Weboo
+Author URI: http: //weboo.biz
+Tags: starkers, naked, clean, basic
 */
 /*
 ===========================
@@ -30,6 +30,10 @@ CONTENTS:
 4507 Fliplet Styles
 ===========================
 */
+@import 'assets/css/reset.css';
+@import 'assets/css/glyphicons.min.css';
+@import 'assets/css/typography.css';
+@import 'assets/css/swiper.min.css';
 
 /* ----------------------------------------------------------------------------------------------------------
 01 Sensible defaults ----------------------------------------------------------------------------------------
@@ -80,10 +84,6 @@ body {
   line-height: normal;
 }
 
-body.admin-bar {
-  padding-top: 32px;
-}
-
 ::-moz-selection {
   color: #fff;
   background: #36344c;;
@@ -123,7 +123,7 @@ textarea {
 /*classes out of the content - heros and bands*/
 h1 {
   font-size: 9vw;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 700;
   color: #474974;
   line-height: initial;
@@ -131,7 +131,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 700;
   color: #474974;
   line-height: initial;
@@ -140,7 +140,7 @@ h2 {
 
 h3 {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 700;
   color: #474974;
   line-height: initial;
@@ -236,7 +236,7 @@ ul > li {
 
 .icon-list li:before {
   /* font-family: 'Glyphicons Halflings'; */
-  font-style: 'Open Sans', sans-serif;
+  font-style: open sans;
   font-size: 18px;
   content: "•";
   display: inline-block;
@@ -1153,7 +1153,7 @@ ul.xoxo input:focus {
 
 /* NAV MENU */
 
-#header {
+.menu-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -1161,149 +1161,9 @@ ul.xoxo input:focus {
   background-color: #1a182d;
   height: 100px;
   padding-top: 50px;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
+  z-index: 5;
   transform: translate3D(0, -50px, 0);
   transition: .1s ease-in-out;
-}
-
-.admin-bar #header {
-  top: 46px;
-}
-
-@media (min-width: 783px) {
-  .admin-bar #header {
-    top: 32px;
-  }
-}
-
-
-
-#header .menu-bar {
-  display: none;
-}
-
-.nav-item {
-  position: relative;
-  margin: 0;
-  padding: 0 30px 0 0;
-  display: block;
-  font-size: 13px;
-  font-family: 'Muli', sans-serif;
-  line-height: 50px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.nav-item a {
-  position: relative;
-  color: #ffffff;
-  transition: all .2s ease-in-out;
-}
-
-.nav-item:hover > .nav-link,
-.sub-menu .nav-link {
-  color: #23d5ff;
-  transition: all .2s ease-in-out;
-}
-
-.nav-item.active > .nav-link {
-  color: #23d5ff;
-}
-
-.nav-item.menu-item-has-children {
-  padding-right: 35px;
-}
-
-.menu-item-has-children > a:after {
-  border: 5px transparent solid;
-  border-top-color: inherit;
-  border-top-width: 7px;
-  content: ' ';
-  display: inline-block;
-  position: absolute;
-  vertical-align: bottom;
-  top: 50%;
-  margin-top: -4px;
-  right: -17px;
-}
-
-.nav-item > .sub-menu {
-  display: flex;
-  opacity: 0;
-  visibility: hidden;
-  width: 320px;
-  position: absolute;
-  z-index: 4;
-  left: 50%;
-  background-color: #2d2a49;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 1);
-  justify-content: space-between;
-  margin: 0 0 0 -180px;
-  padding: 22px 40px;
-  flex-flow: row wrap;
-  transform: translateY(-16px);
-  transition: all .1s ease-in-out;
-}
-
-.nav-item.menu-item-has-children > .sub-menu {
-  margin: 0 0 0 -185px;
-}
-
-.nav-item:hover > .sub-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.menu-item-has-children:after {
-  content: '';
-  position: absolute;
-  display: none;
-  bottom: -9px;
-  left: 34%;
-  background-color: #2d2a49;
-  z-index: 10;
-  width: 16px;
-  height: 16px;
-  transform: rotate(45deg);
-  border-top: 1px solid rgba(255,255,255,0.1);
-  border-left: 1px solid rgba(255,255,255,0.1);
-  transition: .1s ease-in-out;
-}
-
-.nav-item:hover:after {
-  display: block;
-}
-
-.sub-menu .nav-item {
-  width: 100%;
-  min-width: 100%;
-  text-align: left;
-  text-transform: none;
-  padding: 12px 7px;
-  line-height: 1.6;
-}
-
-.sub-menu .nav-link {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-}
-
-.menu-item-many-children .sub-menu {
-  flex-flow: column wrap;
-  max-height: 315px;
-  left: auto;
-  right: 0;
-}
-
-.menu-item-many-children .sub-menu .nav-item {
-  width: auto;
-  min-width: auto;
-  flex: 50%;
 }
 
 .menu-bar-fliplet-wrapper {
@@ -1357,6 +1217,33 @@ ul.xoxo input:focus {
   transition: .1s ease-in-out;
 }
 
+.menu-link {
+  position: relative;
+  display: none;
+  float: right;
+  background-color: #fff;
+}
+
+.menu-link p {
+  position: relative;
+  z-index: 4;
+  margin: 0;
+  padding: 0 30px 0 0;
+  font-size: 13px;
+  font-family: 'Muli', sans-serif;
+  color: #fff;
+  background-color: #1a182d;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  transition: all .2s ease-in-out;
+}
+
+.menu-link p:hover {
+  color: #23d5ff;
+  transition: all .2s ease-in-out;
+}
+
 #why-fliplet-link p,
 #features-link p,
 #resources-link p {
@@ -1388,6 +1275,10 @@ ul.xoxo input:focus {
   right: 17px;
 }
 
+.menu-link.active p {
+  color: #23d5ff;
+}
+
 #why-fliplet-link.active:after,
 #features-link.active:after,
 #resources-link.active:after {
@@ -1404,6 +1295,19 @@ ul.xoxo input:focus {
   border-top: 1px solid rgba(255,255,255,0.1);
   border-left: 1px solid rgba(255,255,255,0.1);
   transition: .1s ease-in-out;
+}
+
+.sub-menu {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  background-color: #2d2a49;
+  transition: .1s ease-in-out;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 40px;
 }
 
 #why-fliplet-link-sub-menu {
@@ -1433,6 +1337,11 @@ ul.xoxo input:focus {
   transform: translate3d(-126px, 100%, 0);
 }
 
+
+/* .sub-menu.active {
+  transform: translate3d(-160px, 100%, 0);
+} */
+
 .sub-menu-column {
   padding: 0 7px;
   display: inline-block;
@@ -1440,7 +1349,7 @@ ul.xoxo input:focus {
 
 .sub-menu-link {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
   color: #fff;
   padding: 12px 0;
 }
@@ -1450,6 +1359,9 @@ ul.xoxo input:focus {
 }
 
 .menu-hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 50px;
   height: 50px;
   transition: .1s ease-in-out;
@@ -1525,70 +1437,50 @@ ul.xoxo input:focus {
   transform: translate3d(0, 0, 0);
 }
 
-.menu-overlay-main {
-  margin: 80px 0 8vh 0;
-}
-
 .menu-overlay-title {
   color: #8d8ea5;
   font-family: 'Muli', sans-serif;
   font-size: 14px;
 }
 
-.main-mobile-menu {
-  padding: 0;
-  margin: 0;
-}
-
-.main-mobile-menu .nav-item {
-  text-align: left;
-  text-transform: none;
+.menu-overlay-link {
   margin: 1vh 0 1vh 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  color: #96a8bf;
+  font-family: 'Open sans', sans-serif;
   font-size: calc(2vw + 12px);
 }
 
-.main-mobile-menu .nav-item a {
-  display: block;
-  color: #96a8bf;
+.menu-overlay-main {
+  margin: 80px 0 8vh 0;
 }
 
 .menu-overlay-footer {
   font-size: 0;
-  display: flex;
-  flex-flow: column wrap;
+  display:flex;
+  justify-content: flex-start;
   margin-bottom: 100px;
 }
 
-.resources-mobile-menu {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: column wrap;
-  max-height: 280px;
+.menu-overlay-column-1 {
+  margin-right: calc(5vw + 30px);
 }
 
-.resources-mobile-menu .nav-item {
-  text-align: left;
-  text-transform: none;
+.menu-overlay-footerlink {
   margin: 1vh 0 1vh 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: calc(1.5vw + 10px);
-  line-height: 1.6;
-}
-
-.resources-mobile-menu .nav-item a {
-  display: block;
   color: #96a8bf;
+  font-family: 'Open sans', sans-serif;
+  font-size: calc(1.5vw + 10px);
 }
 
 /**** tablet and up CSS *****/
 
 @media (min-width: 950px) {
-  #header .menu-bar {
-    display: block;
+  .menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #36344c;
   }
 
   .menu-hamburger {
@@ -1631,25 +1523,18 @@ footer h3 {
   color: #8d8ea5;
 }
 
-footer .footer-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-footer .footer-menu .menu-item {
-  list-style: none !important;
-  margin: 0.7em 0 0 0;
-}
-
-footer .footer-menu a {
-  display: block;
+footer p {
   color: #8d8ea5;
   font-size: 14px;
   transition: all .2s ease-in-out;
 }
 
-footer .footer-menu a:hover {
+footer a  {
+  transition: all .2s ease-in-out;
+}
+
+footer a:hover,
+footer p:hover  {
   color: #23d5ff;
   transition: all .2s ease-in-out;
 }
@@ -1661,7 +1546,7 @@ footer .footer-menu a:hover {
     margin: 4vh 3vw 4vh 3vw;
   }
 
-  footer .footer-menu a {
+  footer p {
     font-size: calc(0.4vw + 10px)
   }
 }
@@ -2596,7 +2481,7 @@ footer .footer-menu a:hover {
   color: #8d8ea5;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
 }
 
 .page-form .page-form-container .ginput_container_checkbox ul,
@@ -3509,7 +3394,7 @@ body.single ul.related_post li {
 }
 .icon-list li:before {
   /* font-family: 'Glyphicons Halflings'; */
-  font-style: 'Open Sans', sans-serif;
+  font-style: open sans;
   font-weight: 400;
   font-size: 17px;
   content: "•";
@@ -3656,6 +3541,10 @@ body.single ul.related_post li {
   .push-9 {
     right: auto;
     left: auto;
+  }
+
+  .admin-bar #header {
+    top: 0;
   }
 
   #header {
@@ -4460,7 +4349,7 @@ h1#blog-logo a {
 
 .expandPlans_Btn {
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family:open sans;
   Background-color:Transparent;
   text-align:center;
   border-radius: 5px;
@@ -6435,7 +6324,7 @@ hr {
 
 
 .Gallery_FAQ .panel-FAQ h5 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 700;
   line-height: 1.6;
   font-size: calc(1.6vw + 10px);

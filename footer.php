@@ -1,36 +1,24 @@
 <footer>
   <div class="footer-column">
     <h3>Company</h3>
-    <?php
-      wp_nav_menu(
-        array(
-          'theme_location' => 'footer_menu_one',
-          'menu_class' => 'footer-menu'
-        )
-      );
-    ?>
+    <a href="https://studio.fliplet.com/signup"><p>Free account</p></a>
+    <a href="/contact"><p>Contact us</p></a>
+    <a href="/fliplet-careers"><p>Careers</p></a>
+    <a href="/partners"><p>Partners and resellers</p></a>
+    <a href="/terms"><p>Terms and policies</p></a>
   </div>
   <div class="footer-column">
     <h3>Product links</h3>
-    <?php
-      wp_nav_menu(
-        array(
-          'theme_location' => 'footer_menu_two',
-          'menu_class' => 'footer-menu'
-        )
-      );
-    ?>
+    <a href="https://studio.fliplet.com" target="_blank"><p>Login to Studio</p></a>
+    <a href="/fliplet-viewer"><p>Fliplet viewer</p></a>
+    <a href="https://help.fliplet.com/" target="_blank"><p>Support site</p></a>
+    <a href="http://developers.fliplet.com" target="_blank"><p>Fliplet for developers</p></a>
   </div>
   <div class="footer-column">
     <h3>Resources</h3>
-    <?php
-      wp_nav_menu(
-        array(
-          'theme_location' => 'footer_menu_three',
-          'menu_class' => 'footer-menu'
-        )
-      );
-    ?>
+    <a href="/blog"><p>Blog</p></a>
+    <a href="/reports/"><p>Reports</p></a>
+    <a href="/?s=events"><p>Events and meetups</p></a>
   </div>
   <div class="footer-column last">
     <h3>Stay in touch</h3>
