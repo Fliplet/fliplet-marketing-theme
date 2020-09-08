@@ -162,7 +162,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   color: #8d8ea5;
-  margin: 0.7em 0 0 0;
   line-height: 1.6;
 }
 
@@ -219,7 +218,7 @@ ul {
 }
 
 ul > li {
-  list-style: none;
+  list-style: disc;
   font-size: 16px;
 }
 
@@ -7039,4 +7038,8 @@ div.wpgdprc-consent-modal nav.wpgdprc-consent-modal__navigation {
     max-height: 100vh !important;
   }
 
+}
+
+.gform_body li {
+  list-style: none;
 }
