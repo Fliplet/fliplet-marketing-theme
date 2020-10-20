@@ -5121,6 +5121,8 @@ blockquote h5 {
 }
 
 .blog-loop-wrap {
+  display: flex;
+  flex-flow: row wrap;
   width: 85%;
   margin: 0 auto;
   padding: 0 0 25px 0;
@@ -5229,6 +5231,7 @@ ul.search-trigger li {
   margin: 0;
   transition: all .2s ease-in-out;
   font-size: calc(0.5vw + 9px);
+  list-style: none;
 }
 
 ul.search-trigger li:hover {
@@ -5312,6 +5315,9 @@ ul.search-trigger li:hover {
 }
 
 .hover-wrap {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
   transition: all .2s ease-in-out;
 }
 .hover-wrap:hover {
@@ -5374,7 +5380,7 @@ ul.search-trigger li:hover {
 
 .lower-post-content {
   background-color: #fff;
-  padding: 20px;
+  padding: 20px 20px 85px 20px;
 }
 
 .upper-post-content .btn.btn-dark {
@@ -5404,7 +5410,7 @@ ul.search-trigger li:hover {
 }
 
 .lower-post-content {
-  height: 400px;
+  flex: 1;
   position: relative;
   border-bottom: 5px solid rgba(21, 60, 73, 0);
 }
@@ -5437,7 +5443,7 @@ ul.search-trigger li:hover {
 
 .lower-post-content a.btn {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   right: 20px;
   font-size: 20px;
 }
@@ -5606,10 +5612,6 @@ Blog Media Queries
 
   .upper-post-content {
     min-height: 380px;
-  }
-
-  .lower-post-content {
-    height: 350px;
   }
 
   .heading-holder {

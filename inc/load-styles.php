@@ -45,7 +45,7 @@ function load_typography() {
 }
 
 function load_theme_styles() {
-  wp_register_style('theme_style', get_template_directory_uri() . '/style.css', array(), '2.0.10', 'all');
+  wp_register_style('theme_style', get_template_directory_uri() . '/style.css', array(), '2.0.13', 'all');
 
   wp_enqueue_style('theme_style');
 }
