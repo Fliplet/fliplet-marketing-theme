@@ -5502,6 +5502,8 @@ div.the_content {
 .heading-holder {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1a182d;
   height: 650px;
   position: relative;
 }
@@ -5510,7 +5512,6 @@ div.the_content {
   background-color:rgba(255, 255, 255, 1);
   width: 100%;
   height: auto;
-  position: absolute;
   bottom: 0;
 }
 
@@ -5616,6 +5617,7 @@ Blog Media Queries
 
   .heading-holder {
     height: 450px;
+    background-size: contain;
   }
 }
 
