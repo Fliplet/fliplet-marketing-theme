@@ -38,7 +38,6 @@
 
     <a class="social-ico" href="https://twitter.com/flipletapp" target="_blank" rel="noopener"><img class="size-full wp-image-32514" src="/wp-content/uploads/2017/02/Twitter.png" alt="twitter" width="25" height="24" /></a>
     <a class="social-ico" href="https://www.linkedin.com/company/flipletapps/" target="_blank"><img class="size-full wp-image-32517" src="/wp-content/uploads/2017/02/Linkedin.png" alt="Linkedin-1" width="25" height="24" /></a>
-    <a class="social-ico" href="https://www.facebook.com/Fliplet" target="_blank" rel="noopener"><img class="size-full wp-image-32515" src="/wp-content/uploads/2017/02/Facebook.png" alt="FB" width="25" height="24" /></a>
 
   </div>
 </footer>

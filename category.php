@@ -13,7 +13,7 @@ get_header('blog'); ?>
 <div class="band" id="content">
 
 		<h1 class="large-title"><?php
-			printf( __( 'Category Archives: %s', 'twentyten' ), '' . single_cat_title( '', false ) . '' );
+			printf( __( '%s', 'twentyten' ), '' . single_cat_title( '', false ) . '' );
 		?></h1>
 		
 		<?php
