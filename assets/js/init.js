@@ -136,8 +136,9 @@ $(function() {
   function addResponsiveWrapperToIframes() {
     $('iframe').each(function () {
       var hasSource = $(this).attr('src');
+      var isGravityFormIframe = $(this).is('[id*="gform"]');
 
-      if ($(this).parent('.embed-responsive').length || !hasSource) {
+      if ($(this).parent('.embed-responsive').length || !hasSource || isGravityFormIframe) {
         return;
       }
 
