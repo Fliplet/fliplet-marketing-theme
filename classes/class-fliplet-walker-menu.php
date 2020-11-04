@@ -10,7 +10,7 @@
 /* Custom navigation menu */
 class Nav_Menu_Walker extends Walker_Nav_Menu {
   public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
-    $class_names = $value = 'nav-item';
+    $class_names = $value = 'nav-item ';
     $classes = empty($item->classes) ? '' : implode(' ', $item->classes);
 
     $class_names = in_array("current_page_item", $item->classes) ? ' active' : '';
@@ -74,7 +74,7 @@ class Nav_Menu_Walker extends Walker_Nav_Menu {
 /* Main mobile menu */
 class Main_Mobile_Menu_Walker extends Walker_Nav_Menu {
   public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
-    $class_names = $value = 'nav-item';
+    $class_names = $value = 'nav-item ';
     $classes = empty($item->classes) ? '' : implode(' ', $item->classes);
 
     $class_names = in_array("current_page_item", $item->classes) ? ' active' : '';
@@ -119,3 +119,18 @@ class Main_Mobile_Menu_Walker extends Walker_Nav_Menu {
     $output .= '</li>';
   }
 }
+
+function add_signup_to_nav($items, $args) {
+  if( $args->theme_location == 'main_menu_landing_page' ){
+    $items .= '<li class="nav-item cta menu-item">'
+    . '<a class="nav-link" href="https://studio.fliplet.com/signup'
+    . '?utm_source=' . get_post_field( 'post_name', get_post() ) . '&utm_medium=marketing&utm_campaign=main-menu-signup'
+    . '">'
+    . 'Sign up</a>'
+    . '</li>';
+  }
+
+  return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'add_signup_to_nav', 10, 2 );
