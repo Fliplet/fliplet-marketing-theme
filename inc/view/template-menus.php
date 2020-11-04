@@ -5,6 +5,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
 			'main_menu' => 'Main Menu',
+			'main_menu_landing_page' => 'Landing Pages Main Menu',
 			'main_menu_mobile' => 'Main Menu Mobile',
 			'resources_menu_mobile' => 'Resources Menu Mobile',
 		  'blog_menu' => 'Blog Menu',
