@@ -1201,7 +1201,21 @@ ul.xoxo input:focus {
   text-decoration: none;
 }
 
-.nav-item:hover > .nav-link,
+.navbar-nav > li.cta > a {
+  background-color: #23d5ff;
+  border-radius: 50px;
+  padding: 8px 14px;
+}
+
+.navbar-nav > li.cta > a:hover,
+.navbar-nav > li.cta > a:focus,
+.navbar-nav > li.cta > a:active,
+.navbar-nav > li.cta > a:active:hover,
+.navbar-nav > li.cta > a:active:hover {
+  color: #1a182d;
+}
+
+.nav-item > .nav-link:hover,
 .sub-menu .nav-link,
 .nav-item.current_page_item > .nav-link {
   color: #23d5ff;
@@ -1242,14 +1256,14 @@ ul.xoxo input:focus {
   box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 1);
   justify-content: space-between;
   margin: 0 0 0 -180px;
-  padding: 22px 40px;
+  padding: 22px 20px;
   flex-flow: row wrap;
   transform: translateY(-16px);
   transition: all .1s ease-in-out;
 }
 
 .nav-item.menu-item-has-children > .sub-menu {
-  margin: 0 0 0 -185px;
+  margin: 0 0 0 -195px;
 }
 
 .nav-item:hover > .sub-menu {
@@ -1283,7 +1297,7 @@ ul.xoxo input:focus {
   min-width: 100%;
   text-align: left;
   text-transform: none;
-  padding: 12px 7px;
+  padding: 12px 20px;
   line-height: 1.6;
 }
 
@@ -1296,8 +1310,7 @@ ul.xoxo input:focus {
 .menu-item-many-children .sub-menu {
   flex-flow: column wrap;
   max-height: 315px;
-  left: auto;
-  right: 0;
+  width: 350px;
 }
 
 .menu-item-many-children .sub-menu .nav-item {
@@ -1307,6 +1320,7 @@ ul.xoxo input:focus {
 }
 
 .menu-bar-fliplet-wrapper {
+  flex: 1;
   height: 85%;
   float: left;
   margin-top: 4px;
@@ -1319,7 +1333,7 @@ ul.xoxo input:focus {
   width: 40px;
 }
 
-.menu-bar-fliplet-wrapper:hover .menu-bar-fliplet-icon {
+.menu-bar-fliplet-logo:hover .menu-bar-fliplet-icon {
   -webkit-animation: rotate-center 1.2s ease-in-out both;
   animation: rotate-center 1.2s ease-in-out both;
 }
@@ -1552,6 +1566,30 @@ ul.xoxo input:focus {
 .main-mobile-menu .nav-item a {
   display: block;
   color: #96a8bf;
+}
+
+.main-menu-landing-page {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main-menu-landing-page > li {
+  display: flex;
+ }
+
+.main-mobile-menu > li.cta > a {
+  background-color: #23d5ff;
+  color: #ffffff;
+  padding: calc(2vw + -10px) 14px;
+  border-radius: 50px;
+}
+
+.main-mobile-menu > li.cta > a:hover,
+.main-mobile-menu > li.cta > a:focus,
+.main-mobile-menu > li.cta > a:active,
+.main-mobile-menu > li.cta > a:active:hover,
+.main-mobile-menu > li.cta > a:active:hover {
+  color: #1a182d;
 }
 
 .menu-overlay-footer {
