@@ -60,8 +60,19 @@ $(function() {
     });
 
     // Attach click listener to all cta and menu links
-    $('.cta, .menu-item a, .nav-item a').on('click', function (e) {
+    $('.cta, .menu-item a, .nav-item a').on('click', function (event) {
+      var urlIsHash = $(this).attr('href') === '#';
+
+      if (urlIsHash) {
+        event.preventDefault();
+      }
+
+      if (!window._gaq || !Array.isArray(window._gaq)) {
+        return;
+      }
+
       var label = ($(this).parent().hasClass('menu-item')) ? $(this).prop('title') : $(this).prop('id');
+
       window._gaq.push(['_trackEvent', 'Call To Action', 'Click Through', label]);
     });
 
