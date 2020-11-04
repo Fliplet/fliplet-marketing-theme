@@ -53,10 +53,12 @@
 				$imageText = wp_get_attachment_image_src($attachmentText->ID, 'full');
 			}
 		?>
-		<a class="menu-bar-fliplet-wrapper" aria-label="Home" href="/">
-			<img class="menu-bar-fliplet-icon" src="<?php echo $imageLogo[0]; ?>" alt="Fliplet Icon">
-			<img class="menu-bar-fliplet-text" src="<?php echo $imageText[0]; ?>" alt="Fliplet">
-		</a>
+		<div class="menu-bar-fliplet-wrapper">
+			<a class="menu-bar-fliplet-logo" aria-label="Home" href="/">
+				<img class="menu-bar-fliplet-icon" src="<?php echo $imageLogo[0]; ?>" alt="Fliplet Icon">
+				<img class="menu-bar-fliplet-text" src="<?php echo $imageText[0]; ?>" alt="Fliplet">
+			</a>
+		</div>
 
 		<?php
 			wp_nav_menu(
