@@ -20,4 +20,25 @@ if( ! ( function_exists( 'wp_get_attachment_by_post_name' ) ) ) {
     return $get_attachment->posts[0];
   }
 }
+
+// stop wp removing div tags
+function uncoverwp_tiny_mce_fix( $init )
+{
+    // html elements being stripped
+    $init['extended_valid_elements'] = 'div[*], style[*], script[*]';
+
+    // don't remove line breaks
+    $init['remove_linebreaks'] = false;
+
+    // convert newline characters to BR
+    $init['convert_newlines_to_brs'] = true;
+
+    // don't remove redundant BR
+    $init['remove_redundant_brs'] = false;
+
+    // pass back to wordpress
+    return $init;
+}
+
+add_filter( 'tiny_mce_before_init', 'uncoverwp_tiny_mce_fix' );
 ?>
