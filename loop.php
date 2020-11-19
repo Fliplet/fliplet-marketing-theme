@@ -53,7 +53,7 @@
 					<div class="pre-post-meta">
 						<?php the_category( ', ' ); ?>
 						<span>|</span>
-						<?php echo date('j M Y'); ?>
+						<?php echo get_the_date('j M Y'); ?>
 					</div>
 
 					<a href="<?php the_permalink(); ?>">
