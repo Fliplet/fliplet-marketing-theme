@@ -387,14 +387,17 @@ button,
 input[type=button],
 input[type=submit] {
   font-family: 'Open Sans', sans-serif;
-  font-size: calc(1.6vw + 10px);
+  font-size: 18px;
+  line-height: 1.85em;
+  font-weight: 400;
   display: inline-block;
   width: auto;
-  padding: 10px 20px;
+  padding: 6px 12px;
   color: #fff;
-  background: #474974;
-  border-radius: 5px;
-  border: none;
+  background: #3aaac8;
+  border-radius: 50px;
+  border: 2px solid #3aaac8;
+  transition: all 400ms ease;
 }
 
 .button:focus,
@@ -404,21 +407,11 @@ button:hover,
 input[type=button]:focus,
 input[type=button]:hover {
   text-decoration: none;
-  border: none;
-  background: #23d5ff;
-  color: #474974;
+  border: 2px solid #3aaac8;
+  color: #fff;
+  background: #3aaac8;
+  transition: all 400ms ease;
 }
-
-@media screen and (min-width: 600px) {
-
-  .button,
-  button,
-  input[type=button],
-  input[type=submit] {
-    font-size: calc(0.5vw + 15px);
-  }
-}
-
 
 /* Tables */
 table {
@@ -2732,11 +2725,6 @@ input.large::placeholder,
   margin: 20px 0 0 0;
 }
 
-.gform_wrapper .gform_page_footer input.button,
-.gform_wrapper .gform_footer input.button {
-  font-size: 5vw;
-}
-
 .gform_wrapper div.validation_error {
   display: none;
 }
@@ -2884,11 +2872,6 @@ ul.gform_fields {
   .contact-us-page .ginput_container.ginput_container_text,
   .contact-us-page .ginput_container.ginput_container_email {
     font-size: calc(0.5vw + 15px);
-  }
-
-  .gform_wrapper .gform_page_footer input.button,
-  .gform_wrapper .gform_footer input.button {
-    font-size: 22px;
   }
 
   .gform_wrapper ul.gfield_checkbox li label,
