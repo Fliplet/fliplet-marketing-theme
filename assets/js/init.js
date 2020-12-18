@@ -28,7 +28,17 @@ $(function() {
     $euros = $('.price-in-euros'),
     $dollars = $('.price-in-dollars');
 
+  function openIntercom(event) {
+    event.preventDefault();
+
+    if (Intercom) {
+      Intercom('show');
+    }
+  }
+
   function attachHandlers() {
+    $('.open-chat-link').on('click', openIntercom);
+
     // learn more scroll down click
     $('.learn-more').click(function () {
       console.log("learn more clicked");

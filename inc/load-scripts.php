@@ -45,7 +45,7 @@ function load_toLocalePoly_js() {
 }
 
 function load_theme_js() {
-  wp_register_script('theme_js', get_template_directory_uri() . '/assets/js/init.js', '', '2.0.5', false);
+  wp_register_script('theme_js', get_template_directory_uri() . '/assets/js/init.js', '', '2.0.7', false);
 
   wp_enqueue_script('theme_js');
 }
