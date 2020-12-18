@@ -12,7 +12,9 @@ if ( function_exists( 'register_nav_menus' ) ) {
 			'contact_info' => 'Contact information',
 			'footer_menu_one' => 'Footer Menu One',
 			'footer_menu_two' => 'Footer Menu Two',
-			'footer_menu_three' => 'Footer Menu Three'
+			'footer_menu_three' => 'Footer Menu Three',
+			'footer_menu_four' => 'Footer Menu Four',
+			'footer_menu_four_landing_page' => 'Landing Page Footer Menu Four'
 		)
 	);
 }

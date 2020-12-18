@@ -23,4 +23,4 @@ get_header('landing-page'); ?>
 
 	</div>
 
-<?php get_footer('page'); ?>
+<?php get_footer('landing-page'); ?>

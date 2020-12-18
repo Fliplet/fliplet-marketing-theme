@@ -37,7 +37,7 @@
     <?php
       wp_nav_menu(
         array(
-          'theme_location' => 'footer_menu_four',
+          'theme_location' => 'footer_menu_four_landing_page',
           'menu_class' => 'footer-menu'
         )
       );
