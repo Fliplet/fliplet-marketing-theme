@@ -26,6 +26,12 @@ function load_animate_css() {
   wp_enqueue_style('animate_css');
 }
 
+function load_fontawesome_css() {
+  wp_register_style('fontawesome_css', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '4.7.0', 'all');
+
+  wp_enqueue_style('fontawesome_css');
+}
+
 function load_swiper_css() {
   wp_register_style('swiper_css', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), '6.1.2', 'all');
 
@@ -50,11 +56,27 @@ function load_theme_styles() {
   wp_enqueue_style('theme_style');
 }
 
+function load_pricing_styles() {
+  global $post;
+
+  $pricing_page_slug = 'pricing';
+
+  if((is_page()
+    || is_single())
+    && preg_match('/\b' . $pricing_page_slug . '\b/', $post->post_name)) {
+    wp_register_style('pricing_styles', get_template_directory_uri() . '/assets/css/pricing-style.css', array(), '1.0.2', 'all');
+
+    wp_enqueue_style('pricing_styles');
+  }
+}
+
 add_action('wp_enqueue_scripts', 'load_reset_css');
 add_action('wp_enqueue_scripts', 'load_bootstrap_css');
 add_action('wp_enqueue_scripts', 'load_animate_css');
+add_action('wp_enqueue_scripts', 'load_fontawesome_css');
 add_action('wp_enqueue_scripts', 'load_swiper_css');
 add_action('wp_enqueue_scripts', 'load_fliplet_fonts');
 add_action('wp_enqueue_scripts', 'load_typography');
 add_action('wp_enqueue_scripts', 'load_theme_styles');
+add_action('wp_enqueue_scripts', 'load_pricing_styles');
 ?>
