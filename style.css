@@ -7168,3 +7168,7 @@ div.wpgdprc-consent-modal nav.wpgdprc-consent-modal__navigation {
 .gform_body li {
   list-style: none;
 }
+
+.gfield.gform_validation_container {
+  display: none;
+}
